@@ -1,0 +1,11 @@
+/* ejs-calendar{
+  border-radius: 20px;
+  background-origin: padding-box;
+  border-color: blue;
+} */
+
+
+card{
+  box-shadow: blue;
+  background-origin: padding-box;
+}

@@ -1,0 +1,100 @@
+ <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                   
+                        <div class="card-header">
+                            <p>Calender</p>
+                        </div>
+                        <div class="card-body text-primary">
+                         
+                            <mat-calendar 
+                            [selected]="selectedDate" 
+                            [startAt]="startAt"
+                            [minDate]="minDate" 
+                            [maxDate]="maxDate" 
+                            [dateFilter]="myDateFilter"
+                            (selectedChange)="onSelect($event)">
+                            </mat-calendar>
+
+                            <mat-grid-tile>
+
+                                <p class="cal_date">{{DayAndDate}}, {{year}}</p>
+                        
+                            </mat-grid-tile>
+                         
+                            <!-- <ejs-calendar id=calendar [values]='value' [isMultiSelection]='multiSelect'>
+                            </ejs-calendar> -->
+                       
+                        </div>
+                        <div class="card-header">
+                            <p>Index</p>
+                        </div>
+                        <div class="card-body text-primary">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Booked by You
+                            </label><br>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+                            <label class="form-check-label" for="flexRadioDisabled">
+                                Not Available
+                            </label><br>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Selected Date
+                            </label><br>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Current Date
+                            </label><br>
+                        </div>
+                    </div>
+                    
+                    <div class="card-header">
+                        <p>Remainder</p></div>
+                        <div class="card-body text-primary">
+                        <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Remind 10 min before
+                    </label>
+                    </div>
+                    </div>
+                   
+                    
+                    
+
+                </div>
+            </div>
+            <div class="col-lg-8 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <p>
+                            <i class="fa fa-bell " style="color: blue;size: 20px;"></i>
+
+                            Day and Full Date</p>
+  
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Card title</h5> -->
+                        <!-- <p class="card-text">
+                           this is the context menu<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        </p> -->
+                        <p class="cal_date">{{DayAndDate}}, {{year}}</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                          
+                        <a href="#" class="btn btn-outline-primary btn-sm">
+                            Card link
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm">
+                            <i class="far fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
